@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_app"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/edtxtDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/destino" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtxtQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtxtDestino"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/qtdpessoas"
+        android:inputType="number" />
+    
+    <EditText
+        android:id="@+id/edtxtOrcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtxtQtd"
+        android:layout_below="@+id/edtxtQtd"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:hint="@string/orcamento"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/rbtgTipoViagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtxtOrcamento"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/rbtNegocios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/rbtnegocios" />
+
+        <RadioButton
+            android:id="@+id/rbtLazer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:text="@string/rbtLazer" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbtgTipoViagem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/btn_pressionado"
+        android:onClick="salvarDados"
+        android:text="@string/btnsalvar" />
+
+</RelativeLayout>

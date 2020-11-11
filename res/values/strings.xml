@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidBD</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="rbtnegocios">Negócios</string>
+    <string name="rbtLazer">Lazer</string>
+    <string name="destino">Destino</string>
+    <string name="qtdpessoas">Quantidade de Pessoas</string>
+    <string name="orcamento">Orçamento</string>
+    <string name="btnsalvar">Salvar</string>
+    <string name="title_activity_tela_consulta">TelaConsulta</string>
+
+</resources>
